@@ -1,17 +1,9 @@
-name: 'Terraform infra'
+name: 'Terrafromgitaction'
 
 on:
   push:
     branches:
       - main
-    inputs:
-      environment:
-        description: 'Environment to run tests against'
-        type: choice
-        required: true
-        options:
-          - env
-          - test
   
 jobs:
   terraform:
